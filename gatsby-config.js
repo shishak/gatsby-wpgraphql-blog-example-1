@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby WPGraphQL Source Demo`,
     description: `Gatsby demo site with WPGraphQL as the source.`,
     author: `@wpgraphql`,
-    wordPressUrl: `https://noh.progital.dev`,
+    wordPressUrl: `http://api2.texty.xyz`,
   },
   plugins: [
     // Include Ant Design component library.
@@ -62,13 +62,13 @@ module.exports = {
         // This is field under which it's accessible
         fieldName: `wpgraphql`,
         // Url to query from
-        url: `https://noh.progital.dev/graphql`,
+        url: `http://api2.texty.xyz/graphql`,
       },
     },
     {
       resolve: "gatsby-wpgraphql-inline-images",
       options: {
-        wordPressUrl: `https://noh.progital.dev/`,
+        wordPressUrl: `http://api2.texty.xyz/`,
         uploadsUrl: `https://noh.progital.dev/wp-content/uploads/`,
         processPostTypes: ["Page", "Post"],
         graphqlTypeName: `WPGraphQL`,
